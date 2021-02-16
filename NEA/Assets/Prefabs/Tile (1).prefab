@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6714477671194460087}
   - component: {fileID: 6866000882636985717}
   - component: {fileID: -8441056806353758549}
+  - component: {fileID: -7148197487721995193}
   m_Layer: 0
   m_Name: Tile (1)
   m_TagString: Untagged
@@ -98,13 +99,34 @@ MonoBehaviour:
   tileGraphics:
   - {fileID: -3314271785575527403, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
   - {fileID: 6494548781853929706, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
-  - {fileID: -9130879439924087061, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
-  - {fileID: 7926011746399687880, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
-  - {fileID: -7202771334365702651, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
-  - {fileID: -9079680561827956873, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
-  - {fileID: -302894304630280335, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
-  - {fileID: 6476188027323108694, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
-  - {fileID: 3324698285619192880, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
-  - {fileID: 8079143279813836810, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
-  - {fileID: 7346136661931531934, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
-  - {fileID: 4392740774136793373, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
+  - {fileID: -5244068304586432119, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
+  - {fileID: 7216935939227707629, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
+  - {fileID: -4567567678871889948, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
+  - {fileID: -8345452454884939679, guid: 998ecb3b01b6efd4f95cdb132ae46130, type: 3}
+  hoverAmount: 0.25
+--- !u!61 &-7148197487721995193
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159278417674527691}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0
