@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: 41e5cfb4fb08cd94081e5616e0118723
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5209265702918886532
+    second: sprite-sheet-b-151x100_0
+  - first:
+      213: 2939161610087865832
+    second: sprite-sheet-b-151x100_1
+  - first:
+      213: 209513996619754322
+    second: sprite-sheet-b-151x100_2
+  - first:
+      213: -8463717362281581678
+    second: sprite-sheet-b-151x100_3
+  - first:
+      213: 1285014662957761367
+    second: sprite-sheet-b-151x100_4
+  - first:
+      213: -5791056761977328691
+    second: sprite-sheet-b-151x100_5
+  - first:
+      213: -2306558211835842138
+    second: sprite-sheet-b-151x100_6
+  - first:
+      213: 4109753215705854683
+    second: sprite-sheet-b-151x100_7
+  - first:
+      213: 1907932838995782244
+    second: sprite-sheet-b-151x100_8
+  - first:
+      213: -1739232027048122743
+    second: sprite-sheet-b-151x100_9
+  - first:
+      213: 8977643088699450255
+    second: sprite-sheet-b-151x100_10
+  - first:
+      213: -846646792381399893
+    second: sprite-sheet-b-151x100_11
+  - first:
+      213: 3775402033125917558
+    second: sprite-sheet-b-151x100_12
+  - first:
+      213: -5655893975484080062
+    second: sprite-sheet-b-151x100_13
+  - first:
+      213: -1528659849220175205
+    second: sprite-sheet-b-151x100_14
+  - first:
+      213: 7620319586095514382
+    second: sprite-sheet-b-151x100_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1e852bac393174398848ee6b26644d
+      internalID: 5209265702918886532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 300
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc70921cfe8e37488efdd7e34fca54b
+      internalID: 2939161610087865832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 300
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbb684a37314294c88be3c96f472114
+      internalID: 209513996619754322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_3
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 300
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6a6325a1ec1e94abc364119a688acc
+      internalID: -8463717362281581678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_4
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 300
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf6b375a2024064d9bd0c773defece4
+      internalID: 1285014662957761367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d47e25f6e5918f4fae01582a6a80af7
+      internalID: -5791056761977328691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_6
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 200
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1aa06b77176e24e8bfcad1aefd8ed6
+      internalID: -2306558211835842138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_7
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 200
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9561602c5d8f04ba0f6db6fe339771
+      internalID: 4109753215705854683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_8
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 200
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1196614ba6fb5c46975a88549240bb4
+      internalID: 1907932838995782244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_9
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 200
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efea72e7b8b450479fce0cfe5008ec8
+      internalID: -1739232027048122743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a7ea9e711663f4c97a16d1f5efd0ea
+      internalID: 8977643088699450255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_11
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 100
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2449726500b1344facbd95fd7e90c85
+      internalID: -846646792381399893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_12
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 100
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2a9bffd2ddbd74398c869a5b496ee1
+      internalID: 3775402033125917558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_13
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 100
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e4f3dcabd73e34da44e2cacc8cb083
+      internalID: -5655893975484080062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_14
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 100
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e76510e9592f084ab492126735a8b53
+      internalID: -1528659849220175205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-sheet-b-151x100_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 151
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0842fd31a405cb4891882b961250e1c
+      internalID: 7620319586095514382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
