@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8614518626172104107}
   - component: {fileID: 8614518626172104084}
   - component: {fileID: 8403727115025018687}
+  - component: {fileID: 228670627120784779}
   m_Layer: 8
   m_Name: Wizard
   m_TagString: Untagged
@@ -147,3 +148,16 @@ MonoBehaviour:
   hasMoved: 0
   moveSpeed: 7
   playerNumber: 1
+--- !u!114 &228670627120784779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8614518626172104104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f453d1ba888a047ae323435c49826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverAmount: 0.35
