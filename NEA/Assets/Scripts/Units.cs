@@ -12,6 +12,8 @@ public class Units : MonoBehaviour
 
     public float moveSpeed;
 
+    public int playerNumber;
+
     private void Start()
     {
         //this allows the script to access all public attributes and methode from GameMaster script
@@ -28,16 +30,20 @@ public class Units : MonoBehaviour
             gm.ResetTiles();
         } else
         {
-            if(gm.selectedUnit != null)
+            if (playerNumber == gm.playerTurn)
             {
-                gm.selectedUnit.selected = false; //this de-selects a unit if there's one already selected
-            }
-            //this now allows me to select the unit the player clicking on
-            selected = true;
-            gm.selectedUnit = this; //this refers to the this instance of the Units script thats attached to the character the player is clicking
+                if (gm.selectedUnit != null)
+                {
+                    gm.selectedUnit.selected = false; //this de-selects a unit if there's one already selected
+                }
+                //this now allows me to select the unit the player clicking on
+                selected = true;
+                gm.selectedUnit = this; //this refers to the this instance of the Units script thats attached to the character the player is clicking
 
-            gm.ResetTiles();
-            GetWalkableTiles();
+                gm.ResetTiles();
+                GetWalkableTiles();
+            }
+         
         }
 
     }
