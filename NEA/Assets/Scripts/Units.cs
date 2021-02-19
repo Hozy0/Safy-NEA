@@ -19,6 +19,13 @@ public class Units : MonoBehaviour
     public bool hasAttacked;
 
     public GameObject weaponIcon;
+    public int attackDamage;
+    public int defenseDamage;
+    public int armor;
+
+    public int health;
+    
+
     private void Start()
     {
         //this allows the script to access all public attributes and methode from GameMaster script
@@ -53,7 +60,46 @@ public class Units : MonoBehaviour
          
         }
 
+        Collider2D col = Physics2D.OverlapCircle(Camera.main.ScreenToWorldPoint(Input.mousePosition), 0.15f);
+        Units unit = col.GetComponent<Units>();
+        if (gm.selectedUnit != null)
+        {
+            if (gm.selectedUnit.enemiesInRange.Contains(unit) && gm.selectedUnit.hasAttacked == false) //checks if we clicked on an enemy unit contained in the list of units we can attack
+            {
+                gm.selectedUnit.Attack(unit);
+            }
+        }
     }
+
+    void Attack(Units enemy)
+    {
+        hasAttacked = true;
+        int enemyDamage = attackDamage - enemy.armor;
+        int myDamage = enemy.defenseDamage - armor;
+
+        if (enemyDamage >= 1)
+        {
+            enemy.health -= enemyDamage;
+        }
+
+        if (myDamage >= 1)
+        {
+            health -= myDamage;
+        }
+
+        if (enemy.health <= 0)
+        {
+            Destroy(enemy.gameObject);
+            GetWalkableTiles();
+        }
+
+        if (health <=0)
+        {
+            gm.ResetTiles();
+            Destroy(this.gameObject);
+        }
+    }
+
 
     void GetWalkableTiles()
     {
