@@ -14,6 +14,11 @@ public class Units : MonoBehaviour
 
     public int playerNumber;
 
+    public int attackRange;
+    List<Units> enemiesInRange = new List<Units>();
+    public bool hasAttacked;
+
+    public GameObject weaponIcon;
     private void Start()
     {
         //this allows the script to access all public attributes and methode from GameMaster script
@@ -22,6 +27,7 @@ public class Units : MonoBehaviour
 
     private void OnMouseDown()
     {
+        ResetWaponIcon();
 
         if (selected == true)
         {
@@ -41,6 +47,7 @@ public class Units : MonoBehaviour
                 gm.selectedUnit = this; //this refers to the this instance of the Units script thats attached to the character the player is clicking
 
                 gm.ResetTiles();
+                GetEnemies();
                 GetWalkableTiles();
             }
          
@@ -68,6 +75,30 @@ public class Units : MonoBehaviour
         }
     }
 
+    void GetEnemies()
+    {
+        enemiesInRange.Clear();
+
+        foreach (Units unit in FindObjectsOfType<Units>())
+        {
+            if (Mathf.Round(Mathf.Abs(transform.position.x - unit.transform.position.x)) + Mathf.Round(Mathf.Abs(transform.position.y - unit.transform.position.y)) <= attackRange)
+            {
+                if (unit.playerNumber != gm.playerTurn && hasAttacked == false)
+                {
+                    enemiesInRange.Add(unit);
+                    unit.weaponIcon.SetActive(true);
+                }
+            }
+        }
+    }
+     public void ResetWaponIcon()
+    {
+        foreach (Units unit in FindObjectsOfType<Units>())
+        {
+            unit.weaponIcon.SetActive(false);
+        }
+    }
+
 
     public void Move(Vector2 tilePos)
     {
@@ -90,5 +121,7 @@ public class Units : MonoBehaviour
         }
 
         hasMoved = true;
+        ResetWaponIcon();
+        GetEnemies();
     }
 }
