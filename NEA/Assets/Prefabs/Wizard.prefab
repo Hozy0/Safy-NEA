@@ -236,7 +236,7 @@ MonoBehaviour:
   attackDamage: 7
   defenseDamage: 3
   armor: 2
-  health: 15
+  health: 10
 --- !u!114 &228670627120784779
 MonoBehaviour:
   m_ObjectHideFlags: 0
