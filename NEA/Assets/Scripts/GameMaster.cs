@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; //this allows me to create and modify UI related variables
 
 public class GameMaster : MonoBehaviour
 {
     public Units selectedUnit;
 
     public int playerTurn = 1;
+
+    public Image playerIndicator;
+    public Sprite player1Indicator;
+    public Sprite player2Indicator;
+
+    public int player1Gold = 100;
+    public int player2Gold = 100;
 
     public void ResetTiles()
     {
@@ -29,10 +37,12 @@ public class GameMaster : MonoBehaviour
         if (playerTurn == 1)
         {
             playerTurn = 2;
+            playerIndicator.sprite = player2Indicator;
         }
         else if (playerTurn == 2)
         {
             playerTurn = 1;
+            playerIndicator.sprite = player1Indicator;
         }
 
         if (selectedUnit != null)

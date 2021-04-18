@@ -190,8 +190,10 @@ MonoBehaviour:
   weaponIcon: {fileID: 5868213766651448139}
   attackDamage: 15
   defenseDamage: 6
-  armor: 10
+  armor: 5
   health: 30
+  paladinHealth: {fileID: 0}
+  isPaladin: 1
 --- !u!61 &5868213766668197708
 BoxCollider2D:
   m_ObjectHideFlags: 0

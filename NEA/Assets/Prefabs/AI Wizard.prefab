@@ -152,10 +152,12 @@ MonoBehaviour:
   attackRange: 1
   hasAttacked: 0
   weaponIcon: {fileID: 3809799059789392352}
-  attackDamage: 7
+  attackDamage: 8
   defenseDamage: 3
   armor: 2
   health: 10
+  paladinHealth: {fileID: 0}
+  isPaladin: 0
 --- !u!114 &4633840854508939989
 MonoBehaviour:
   m_ObjectHideFlags: 0

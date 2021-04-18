@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Units : MonoBehaviour
 {
@@ -22,17 +23,30 @@ public class Units : MonoBehaviour
     public int attackDamage;
     public int defenseDamage;
     public int armor;
-
     public int health;
+
+    public Text paladinHealth;
+    public bool isPaladin;
     
 
     private void Start()
     {
         //this allows the script to access all public attributes and methode from GameMaster script
-        gm = FindObjectOfType<GameMaster>(); 
+        gm = FindObjectOfType<GameMaster>();
+        UpdatePaladinHealth(); 
     }
 
-    private void OnMouseDown()
+    public void UpdatePaladinHealth()
+    {
+        if (isPaladin == true) //checks if the unit is a paladin
+        {
+            paladinHealth.text = health.ToString();
+        }
+    }
+
+
+
+private void OnMouseDown()
     {
         ResetWaponIcon();
 
@@ -80,11 +94,13 @@ public class Units : MonoBehaviour
         if (enemyDamage >= 1)
         {
             enemy.health -= enemyDamage;
+            enemy.UpdatePaladinHealth();
         }
 
         if (myDamage >= 1)
         {
             health -= myDamage;
+            UpdatePaladinHealth();
         }
 
         if (enemy.health <= 0)
