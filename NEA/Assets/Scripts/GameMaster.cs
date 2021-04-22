@@ -16,12 +16,41 @@ public class GameMaster : MonoBehaviour
     public int player1Gold = 100;
     public int player2Gold = 100;
 
+    public Text player1GoldText;
+    public Text player2GoldText;
+
+    public void UpdateGoldText()
+    {
+        player1GoldText.text = player1Gold.ToString();
+        player2GoldText.text = player2Gold.ToString();
+    }
+
     public void ResetTiles()
     {
         foreach (Tile tile in FindObjectsOfType<Tile>()) //this allows me to create a function resets the tiles to their original colour
         {
             tile.Reset();
         }
+    }
+
+    void GetGoldIncome(int playerTurn)
+    {
+        foreach (Alchimist alchimist in FindObjectsOfType<Alchimist>())
+        {
+            if (alchimist.playerNumber == playerTurn)
+            {
+                if (playerTurn == 1)
+                {
+                    player1Gold += alchimist.goldPerTurn;
+                }
+                else
+                {
+                    player2Gold += alchimist.goldPerTurn;
+                }
+            }
+        }
+
+        UpdateGoldText();
     }
 
     private void Update()
@@ -44,6 +73,8 @@ public class GameMaster : MonoBehaviour
             playerTurn = 1;
             playerIndicator.sprite = player1Indicator;
         }
+
+        GetGoldIncome(playerTurn);
 
         if (selectedUnit != null)
         {
