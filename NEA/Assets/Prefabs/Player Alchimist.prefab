@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2546500668966816598}
   - component: {fileID: 8171727066434760192}
   - component: {fileID: 6702391391973065796}
+  - component: {fileID: 6218805336982707749}
+  - component: {fileID: 6365870135978786623}
   m_Layer: 8
   m_Name: Player Alchimist
   m_TagString: Untagged
@@ -143,3 +145,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &6218805336982707749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2546500668966816599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42905d90c116c8b4abbe4c4113cac89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldPerTurn: 50
+  playerNumber: 1
+--- !u!114 &6365870135978786623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2546500668966816599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d785181f2f1318e41812df119f5d7f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 500

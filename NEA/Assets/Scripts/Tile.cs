@@ -15,6 +15,9 @@ public class Tile : MonoBehaviour
     public bool isWalkable;
     GameMaster gm;
 
+    public Color creatableColor;
+    public bool isCreatable;
+
     private void Start()
         {
 
@@ -63,13 +66,31 @@ public class Tile : MonoBehaviour
     {
         rend.color = Color.white;
         isWalkable = false;
+        isCreatable = false;
     }
-    
+
+    public void Creatable() //this will highlight a tile if you can create a unit on it
+    {
+        rend.color = creatableColor;
+        isCreatable = true;
+    }
+
     private void OnMouseDown()
     {
         if (isWalkable && gm.selectedUnit != null)
         {
             gm.selectedUnit.Move(this.transform.position);
+        }
+        else if (isCreatable == true)
+        {
+            BarrackItem item = Instantiate(gm.purchasedItem, new Vector2(transform.position.x, transform.position.y), Quaternion.identity); //spawns the purchased item on the selected tile
+            gm.ResetTiles();
+            Units unit = item.GetComponent<Units>();
+            if (unit != null)
+            {
+                unit.hasAttacked = true;
+                unit.hasMoved = true;
+            }
         }
     }
 }

@@ -19,6 +19,8 @@ public class GameMaster : MonoBehaviour
     public Text player1GoldText;
     public Text player2GoldText;
 
+    public BarrackItem purchasedItem;
+
     public void UpdateGoldText()
     {
         player1GoldText.text = player1Gold.ToString();
@@ -63,6 +65,7 @@ public class GameMaster : MonoBehaviour
 
     void EndTurn()
     {
+        GetGoldIncome(playerTurn);
         if (playerTurn == 1)
         {
             playerTurn = 2;
@@ -73,8 +76,6 @@ public class GameMaster : MonoBehaviour
             playerTurn = 1;
             playerIndicator.sprite = player1Indicator;
         }
-
-        GetGoldIncome(playerTurn);
 
         if (selectedUnit != null)
         {
@@ -90,5 +91,7 @@ public class GameMaster : MonoBehaviour
             unit.weaponIcon.SetActive(false);
             unit.hasAttacked = false;
         }
+
+        GetComponent<Barrack>().CloseMenus();
     }
 }

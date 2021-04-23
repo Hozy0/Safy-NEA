@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1483246256766245594}
   - component: {fileID: 279541463111828123}
   - component: {fileID: 4633840854508939989}
+  - component: {fileID: -7847281565728022555}
   m_Layer: 8
   m_Name: AI Wizard
   m_TagString: Untagged
@@ -145,14 +146,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
-  movementRange: 3
+  movementRange: 2
   hasMoved: 0
-  moveSpeed: 7
+  moveSpeed: 6
   playerNumber: 2
-  attackRange: 1
+  attackRange: 2
   hasAttacked: 0
   weaponIcon: {fileID: 3809799059789392352}
-  attackDamage: 8
+  attackDamage: 7
   defenseDamage: 3
   armor: 2
   health: 10
@@ -171,6 +172,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverAmount: 0.35
+--- !u!114 &-7847281565728022555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3501619997886803050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d785181f2f1318e41812df119f5d7f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 300
 --- !u!1 &3809799059789392352
 GameObject:
   m_ObjectHideFlags: 0
