@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42905d90c116c8b4abbe4c4113cac89a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldPerTurn: 50
   playerNumber: 2
 --- !u!114 &-3583079611899803551
 MonoBehaviour:

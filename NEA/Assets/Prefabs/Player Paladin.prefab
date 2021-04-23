@@ -108,11 +108,12 @@ MonoBehaviour:
   hasAttacked: 0
   weaponIcon: {fileID: 571144836515596351}
   attackDamage: 8
-  defenseDamage: 6
+  defenseDamage: 3
   armor: 5
   health: 30
   paladinHealth: {fileID: 0}
   isPaladin: 1
+  VictoryPanel: {fileID: 0}
 --- !u!61 &571144835078389044
 BoxCollider2D:
   m_ObjectHideFlags: 0

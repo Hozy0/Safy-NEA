@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3938956778565853538}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5, y: 1, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -155,10 +155,11 @@ MonoBehaviour:
   weaponIcon: {fileID: 4677758906054456744}
   attackDamage: 5
   defenseDamage: 1
-  armor: 4
+  armor: 3
   health: 15
   paladinHealth: {fileID: 0}
   isPaladin: 0
+  VictoryPanel: {fileID: 0}
 --- !u!114 &4758459718914550081
 MonoBehaviour:
   m_ObjectHideFlags: 0

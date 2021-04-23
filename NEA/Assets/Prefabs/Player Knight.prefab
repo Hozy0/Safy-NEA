@@ -236,10 +236,11 @@ MonoBehaviour:
   weaponIcon: {fileID: 1926545538606032731}
   attackDamage: 5
   defenseDamage: 1
-  armor: 4
+  armor: 3
   health: 15
   paladinHealth: {fileID: 0}
   isPaladin: 0
+  VictoryPanel: {fileID: 0}
 --- !u!114 &1756328959497894834
 MonoBehaviour:
   m_ObjectHideFlags: 0

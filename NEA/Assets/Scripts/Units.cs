@@ -27,6 +27,7 @@ public class Units : MonoBehaviour
 
     public Text paladinHealth;
     public bool isPaladin;
+    public GameObject victoryPanel;
     
 
     private void Start()
@@ -111,6 +112,10 @@ private void OnMouseDown()
 
         if (health <=0)
         {
+            if (isPaladin)
+            {
+                victoryPanel.SetActive(true);
+            }
             gm.ResetTiles();
             Destroy(this.gameObject);
         }
