@@ -106,16 +106,16 @@ private void OnMouseDown()
 
         if (enemy.health <= 0)
         {
+            if (enemy.isPaladin)
+            {
+                victoryPanel.SetActive(true);
+            }
             Destroy(enemy.gameObject);
             GetWalkableTiles();
         }
 
         if (health <=0)
         {
-            if (isPaladin)
-            {
-                victoryPanel.SetActive(true);
-            }
             gm.ResetTiles();
             Destroy(this.gameObject);
         }

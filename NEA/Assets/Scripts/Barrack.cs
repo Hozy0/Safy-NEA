@@ -49,9 +49,11 @@ public class Barrack : MonoBehaviour
         if (gm.playerTurn == 1 && item.cost <= gm.player1Gold )
         {
             gm.player1Gold -= item.cost;
+            player1Menu.SetActive(false);
         } else if (gm.playerTurn == 2 && item.cost <= gm.player2Gold)
         {
             gm.player2Gold -= item.cost;
+            player2Menu.SetActive(false);
         } else
         {
             print("NOT ENOUGH GOLD!");
